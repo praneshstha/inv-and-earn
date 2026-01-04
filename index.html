@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Modern Business Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<section id="home">
+  <div class="home-content">
+    <h1 class="title">Grow Your Wealth With Smart Earnings</h1>
+    <p class="subtitle">
+      Start your financial journey today with our secure and fast earning platform.
+    </p>
+
+    <div class="home-buttons">
+      <button class="btn primary">Get Started</button>
+      <button class="btn secondary">Learn More</button>
+    </div>
+  </div>
+</section>
+
+  <header class="glass-nav" id="siteHeader">
+    <div class="left">
+      <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+      <h2 class="logo">KAPS</h2>
+    </div>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  </header>
+
+  
+  <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  
+  <main>
+    <section id="home" class="section parallax" data-speed="0.5">
+      <div class="cards">
+  <article class="card fade">
+    <h3>Fast Performance</h3>
+    <p>Experience lightning-fast transactions and seamless navigation.</p>
+    <button class="btn small ripple read-more-btn" data-feature="fast">Read More</button>
+  </article>
+
+  <article class="card fade">
+    <h3>Secure Platform</h3>
+    <p>Your funds and data are protected with industry-leading security.</p>
+    <button class="btn small ripple read-more-btn" data-feature="secure">Read More</button>
+  </article>
+
+  <article class="card fade">
+    <h3>Analytics Dashboard</h3>
+    <p>Track your earnings and progress with real-time insights.</p>
+    <button class="btn small ripple read-more-btn" data-feature="analytics">Read More</button>
+  </article>
+
+  <article class="card fade">
+    <h3>24/7 Support</h3>
+    <p>Get assistance anytime from our dedicated customer support team.</p>
+    <button class="btn small ripple read-more-btn" data-feature="support">Read More</button>
+  </article>
+
+  <article class="card fade">
+    <h3>Easy Interface</h3>
+    <p>User-friendly design to make investing and earning simple.</p>
+    <button class="btn small ripple read-more-btn" data-feature="interface">Read More</button>
+  </article>
+
+  <article class="card fade">
+    <h3>Global Access</h3>
+    <p>Access your account securely from anywhere in the world.</p>
+    <button class="btn small ripple read-more-btn" data-feature="global">Read More</button>
+  </article>
+</div>
+
+    </section>
+
+<!-- ======================
+FEATURES SECTION
+====================== -->
+<section id="features" class="section">
+  <div class="content">
+    <h2>Our Features</h2>
+    <p class="lead">Explore what makes our platform stand out.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Fast Performance</h3>
+        <p>Quick overview of fast performance.</p>
+        <button class="btn read-more-btn" data-feature="fast">Read More</button>
+      </div>
+
+      <div class="card">
+        <h3>Secure Platform</h3>
+        <p>Quick overview of security.</p>
+        <button class="btn read-more-btn" data-feature="secure">Read More</button>
+      </div>
+
+      <div class="card">
+        <h3>Analytics Dashboard</h3>
+        <p>Quick overview of analytics.</p>
+        <button class="btn read-more-btn" data-feature="analytics">Read More</button>
+      </div>
+
+      <div class="card">
+        <h3>24/7 Support</h3>
+        <p>Quick overview of support.</p>
+        <button class="btn read-more-btn" data-feature="support">Read More</button>
+      </div>
+
+      <div class="card">
+        <h3>Easy Interface</h3>
+        <p>Quick overview of interface.</p>
+        <button class="btn read-more-btn" data-feature="interface">Read More</button>
+      </div>
+
+      <div class="card">
+        <h3>Global Access</h3>
+        <p>Quick overview of global access.</p>
+        <button class="btn read-more-btn" data-feature="global">Read More</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================
+FEATURE MODAL
+====================== -->
+<div id="featureModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDescription"></p>
+  </div>
+</div>
+<!-- Pricing Subscription Modal -->
+<div id="subscribeModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3 id="subscribeTitle">Subscribe to Plan</h3>
+    <form id="subscribeForm">
+      <label>
+        Name:
+        <input type="text" id="subName" name="name" required />
+      </label>
+      <label>
+        Email:
+        <input type="email" id="subEmail" name="email" required />
+      </label>
+      <label>
+        Bank Account Number:
+        <input type="text" id="subBankAcc" name="bankAcc" required />
+      </label>
+      <label>
+        Plan Amount:
+        <input type="text" id="subPlan" name="planAmount" readonly />
+      </label>
+      <button type="submit" class="btn">Subscribe</button>
+    </form>
+    <p id="subMsg" style="margin-top:10px;"></p>
+  </div>
+</div>
+
+<!-- Pricing Modal -->
+<div id="pricingModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3 id="pricingModalTitle">Choose Plan</h3>
+    <form id="pricingForm">
+      <label>
+        Name
+        <input type="text" id="userName" required minlength="2" />
+      </label>
+      <label>
+        Email
+        <input type="email" id="userEmail" required />
+      </label>
+      <label>
+        Bank Account Number
+        <input type="text" id="bankAcc" required minlength="8" />
+      </label>
+      <label>
+        Plan Amount
+        <input type="text" id="planAmount" readonly />
+      </label>
+      <div class="form-actions">
+        <button type="submit" class="btn ripple">Submit</button>
+        <button type="button" class="btn ghost close-btn">Cancel</button>
+      </div>
+      <div id="pricingMsg" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</div>
+
+<section id="pricing" class="section">
+  <div class="container">
+    <h2>Pricing Plans</h2>
+    <p class="lead">Choose a plan that fits your investment goals.</p>
+
+    <div class="pricing-grid">
+      <!-- Plan 1 -->
+      <div class="price-card">
+        <h3>Basic</h3>
+        <div class="price">Rs. 3,000</div>
+        <ul>
+          <li>Earn 5% a day</li>
+          <li>Tier 1 applicable</li>
+          <li>30% charges applied</li>
+        </ul>
+        <button class="btn choose-btn">Choose Plan</button>
+      </div>
+
+      <!-- Plan 2 -->
+      <div class="price-card featured">
+        <h3>Standard</h3>
+        <div class="price">Rs. 5,000</div>
+        <ul>
+          <li>Earn 5% a day</li>
+          <li>Tier 1 applicable</li>
+          <li>30% charges applied</li>
+        </ul>
+        <button class="btn choose-btn">Choose Plan</button>
+      </div>
+
+      <!-- Plan 3 -->
+      <div class="price-card">
+        <h3>Premium</h3>
+        <div class="price">Rs. 10,000</div>
+        <ul>
+          <li>Earn 5% a day</li>
+          <li>Tier 1 applicable</li>
+          <li>30% charges applied</li>
+        </ul>
+        <button class="btn choose-btn">Choose Plan</button>
+      </div>
+
+      <!-- Plan 4 -->
+      <div class="price-card">
+        <h3>Gold</h3>
+        <div class="price">Rs. 1,00,000</div>
+        <ul>
+          <li>Earn 5% a day</li>
+          <li>Tier 1 applicable</li>
+          <li>20% charges applied</li>
+        </ul>
+        <button class="btn choose-btn">Choose Plan</button>
+      </div>
+
+      <!-- Plan 5 -->
+      <div class="price-card">
+        <h3>Platinum</h3>
+        <div class="price">Rs. 5,00,000</div>
+        <ul>
+          <li>Earn 5% a day</li>
+          <li>Tier 1 applicable</li>
+          <li>15% charges applied</li>
+        </ul>
+        <button class="btn choose-btn">Choose Plan</button>
+      </div>
+
+      <!-- Plan 6 -->
+      <div class="price-card">
+        <h3>Diamond</h3>
+        <div class="price">Rs. 10,00,000</div>
+        <ul>
+          <li>Earn 5% a day</li>
+          <li>Tier 1 applicable</li>
+          <li>10% charges applied</li>
+        </ul>
+        <button class="btn choose-btn">Choose Plan</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="testimonials" class="section parallax" data-speed="0.35">
+      <div class="overlay"></div>
+      <div class="content container fade">
+        <h2>Testimonials</h2>
+        <div class="testimonials">
+          <blockquote>
+            “Easy to use, transparent, and reliable. I feel confident about my financial decisions now.”
+            <cite>— Karan Pradhan</cite>
+          </blockquote>
+          <blockquote>
+            “Reliable, fast and pleasant to work with.” <cite>— Sumit Rajbanshi</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section parallax" data-speed="0.3">
+      <div class="overlay"></div>
+      <div class="content container fade">
+        <h2>FAQ</h2>
+
+        <div class="faq-list">
+          <details>
+            <summary>How do I start investing?</summary>
+            <div class="faq-body">Our platform helps users manage investments and grow their savings through secure and transparent financial tools.</div>
+          </details>
+
+          <details>
+            <summary>Is my money safe?</summary>
+            <div class="faq-body">Yes. We use secure encryption and follow strict compliance regulations to protect your funds and personal data.</div>
+          </details>
+
+          <details>
+            <summary>How much can I earn?</summary>
+            <div class="faq-body">Earnings depend on your investment plan, market performance, and duration. Returns are clearly explained for each plan.</div>
+          </details>
+
+          <details>
+            <summary>How do I withdraw my earnings?</summary>
+            <div class="faq-body">You can withdraw your funds anytime through your verified bank account or payment method. Withdrawals are processed securely and quickly.</div>
+          </details>
+
+          <details>
+            <summary>Are there any fees?</summary>
+            <div class="faq-body">We maintain transparent fees, which are clearly listed for each plan. There are no hidden charges.</div>
+          </details>
+
+          <details>
+            <summary>How can I get support?</summary>
+            <div class="faq-body">Our customer support team is available via email, chat, or phone to assist you with any questions.</div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section parallax" data-speed="0.25">
+      <div class="overlay"></div>
+      <div class="content container fade">
+        <h2>Contact Us</h2>
+        <p class="lead">Send a message — we'll respond within 24 hours.</p>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <label>
+              Name
+              <input type="text" name="name" id="name" required minlength="2" />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" id="email" required />
+            </label>
+          </div>
+
+          <label>
+            Message
+            <textarea name="message" id="message" required minlength="10"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn ripple">Send Message</button>
+            <button type="reset" class="btn ghost">Reset</button>
+          </div>
+
+          <div id="formMsg" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> KAPS — All rights reserved.</p>
+  </footer>
+  
+<div id="featureModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDescription"></p>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
